@@ -1,6 +1,6 @@
-# Frontend Mentor - 3-column preview card component solution
+# Frontend Mentor - Sunnyside agency landing page solution
 
-This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://ignaciomansillagomez.github.io/SunnySide-Agency-Landing-Page/)
+- [Solution URL](https://ignaciomansillagomez.github.io/SunnySide/)
 
 ### Built with
 
