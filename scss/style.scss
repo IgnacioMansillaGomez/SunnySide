@@ -45,7 +45,7 @@ a {
 }
 /* --------------------------------- HEADER --------------------------------- */
 header {
-  background-image: url(/images/mobile/image-header.jpg);
+  background-image: url(../images/mobile/image-header.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -308,7 +308,7 @@ footer {
 @media only screen and (min-width: 500px) {
   header {
     font-size: 3rem;
-    background-image: url(/images/desktop/image-header.jpg);
+    background-image: url(../images/desktop/image-header.jpg);
     .nav__main {
       display: flex;
       justify-content: space-between;
