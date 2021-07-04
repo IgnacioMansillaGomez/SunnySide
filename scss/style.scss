@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+//Colors
+//Primary
+$Soft-red: hsl(7, 99%, 70%);
+$Yellow: hsl(51, 100%, 49%);
+//graphic design text
+$Dark-desaturated-cyan: hsl(167, 40%, 24%);
+//photography text
+$Dark-blue: hsl(198, 62%, 26%);
+//footer
+$Dark-moderate-cyan: hsl(168, 34%, 41%);
+//Neutral
+$Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+$Very-dark-grayish-blue: hsl(213, 9%, 39%);
+$Dark-grayish-blue: hsl(232, 10%, 55%);
+$Grayish-blue: hsl(210, 4%, 67%);
+$White: hsl(0, 0%, 100%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.active {
+  display: none;
+}
+/* --------------------------------- HEADER --------------------------------- */
+header {
+  background-image: url(/images/mobile/image-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  text-align: center;
+  .nav__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-top: 30px;
+    .nav__links {
+      display: none;
+    }
+  }
+  .hamburger__image {
+    cursor: pointer;
+  }
+  .main__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .main__text {
+      font-size: 50px;
+      text-align: center;
+      color: #fff;
+      font-family: "Fraunces", sans-serif;
+      font-weight: 900;
+      letter-spacing: 5px;
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+  }
+  .x {
+    display: flex;
+    justify-content: center;
+  }
+  .nav__menu {
+    position: absolute;
+    z-index: 789;
+    background: #fff;
+    // margin: 1rem;
+    width: 90%;
+    padding: 35px;
+    clip-path: polygon(100% 0, 90% 11%, 0 11%, 0 100%, 100% 100%);
+    .nav__item {
+      padding: 25px 20px;
+      font-size: 16px;
+      font-family: "Barwol", sans-serif;
+      a {
+        color: $Dark-grayish-blue;
+        font-weight: 600;
+        padding: 10px 25px;
+        &:hover {
+          background: $Yellow;
+          border-radius: 25px;
+        }
+      }
+    }
+  }
+}
+/* ------------------------------- Egg-section ------------------------------ */
+.egg__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .egg__image {
+    max-width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .egg__text {
+    padding: 40px;
+    text-align: center;
+    .egg__title {
+      font-family: "Fraunces", sans-serif;
+      font-size: 33px;
+      color: $Very-dark-desaturated-blue;
+      font-weight: 500;
+      padding: 10px 0 20px 0;
+    }
+    .egg__copy {
+      font-family: "Barlow", sans-serif;
+      color: $Dark-grayish-blue;
+      font-size: 16px;
+      line-height: 26px;
+      padding: 10px 0 30px 0;
+      text-align: center;
+    }
+    .egg__button {
+      cursor: pointer;
+      font-family: "Fraunces", sans-serif;
+      margin: 20px 0;
+      font-size: 16px;
+    }
+  }
+}
+/* ------------------------------ Pink-section ------------------------------ */
+.pink__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .pink__image {
+    max-width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .pink__text {
+    padding: 40px;
+    text-align: center;
+    .pink__title {
+      font-family: "Fraunces", sans-serif;
+      font-size: 33px;
+      color: $Very-dark-desaturated-blue;
+      font-weight: 500;
+      padding: 10px 0 20px 0;
+    }
+    .pink__copy {
+      font-family: "Barlow", sans-serif;
+      color: $Dark-grayish-blue;
+      font-size: 16px;
+      line-height: 26px;
+      padding: 10px 0 30px 0;
+      text-align: center;
+    }
+    .pink__button {
+      cursor: pointer;
+      font-family: "Fraunces", sans-serif;
+      margin: 20px 0;
+      font-size: 16px;
+    }
+  }
+}
+/* ----------------------------- Service-section ---------------------------- */
+.service__section {
+  text-align: center;
+  .service {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1em;
+    h2 {
+      font-family: "Fraunces", sans-serif;
+      padding-bottom: 30px;
+    }
+    p {
+      font-family: "Barlow", sans-serif;
+      padding: 0px 10px 40px 10px;
+      line-height: 28px;
+    }
+  }
+  .gra {
+    background-image: url(../images/mobile/image-graphic-design.jpg);
+    color: $Dark-desaturated-cyan;
+  }
+  .ph {
+    background-image: url(../images/mobile/image-photography.jpg);
+    color: $Dark-blue;
+  }
+}
+/* -------------------------- Testimonials-section -------------------------- */
+.testimonials__section {
+  text-align: center;
+  .testimonials__title {
+    font-family: "Fraunces", sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    padding: 30px 0;
+    letter-spacing: 2px;
+    color: $Grayish-blue;
+  }
+  .info__testimonials {
+    .info {
+      padding: 40px;
+      margin-top: 20px;
+      .img__emily {
+        border-radius: 50%;
+        width: 25%;
+      }
+      p {
+        padding: 25px 5px;
+        font-family: "Barlow", sans-serif;
+        color: $Dark-grayish-blue;
+        font-size: 16px;
+        line-height: 26px;
+      }
+      .info__name {
+        font-family: "Fraunces", sans-serif;
+        font-size: 18px;
+        color: $Dark-blue;
+      }
+      .info__profesion {
+        padding: 0;
+        color: $Grayish-blue;
+      }
+    }
+  }
+}
+/* ----------------------------- Collage-section ---------------------------- */
+.collage__section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  margin-top: 30px;
+  img {
+    width: 50%;
+  }
+}
+/* --------------------------------- Footer --------------------------------- */
+footer {
+  background: hsl(168, 41%, 45%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  color: $Dark-desaturated-cyan;
+  .footer__heading {
+    margin-top: 0;
+    align-self: center;
+    font-size: 2.5em;
+    font-family: "Fraunces", sans-serif;
+    font-weight: 900;
+  }
+  .footer__nav {
+    margin: 2em 0 0 0;
+    .footer__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    }
+    .footer__list > li {
+      padding: 20px;
+    }
+    .footer__list > li > a {
+      font-family: "Barlow", sans-serif;
+      font-weight: 600;
+      color: $Dark-desaturated-cyan;
+      &:hover {
+        color: #fff;
+      }
+    }
+    .footer__list .icon {
+      &:hover {
+        fill: (#fff);
+      }
+    }
+  }
+}
+/* ------------------------------ MEDIA QUERIES ----------------------------- */
+
+@media only screen and (min-width: 500px) {
+  header {
+    font-size: 3rem;
+    background-image: url(/images/desktop/image-header.jpg);
+    .nav__main {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: row;
+      .hamburger__image {
+        display: none;
+      }
+      .nav__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        .nav__item {
+          padding: 0 5px;
+          a {
+            color: $White;
+            font-family: "Barlow", sans-serif;
+            padding: 10px 10px;
+            &:hover {
+              background: $White;
+              color: $Very-dark-desaturated-blue;
+              border-radius: 20px;
+              font-family: "Fraunces", sans-serif;
+              text-transform: uppercase;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .nav__menu {
+    display: none;
+  }
+}
+@media only screen and (min-width: 900px) {
+  header {
+    font-size: 2rem;
+    .nav__main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      .hamburger__image {
+        display: none;
+      }
+      .nav__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        .nav__item {
+          padding: 0 10px;
+          a {
+            color: $White;
+            font-family: "Barlow", sans-serif;
+            padding: 10px 15px;
+            &:hover {
+              background: $White;
+              color: $Very-dark-desaturated-blue;
+              border-radius: 20px;
+              font-family: "Fraunces", sans-serif;
+              text-transform: uppercase;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .nav__menu {
+    display: none;
+  }
+  .egg__section {
+    flex-direction: row;
+    justify-content: space-between;
+    .egg__image {
+      width: 50%;
+      order: 2;
+      img {
+        width: 100%;
+      }
+    }
+    .egg__text {
+      text-align: left;
+      order: 1;
+      width: 40%;
+      padding-right: 0px;
+      .egg__title {
+        padding: 10px 0 20px 0;
+      }
+      .egg__copy {
+        text-align: left;
+      }
+      .egg__button {
+        font-size: 16px;
+        text-align: left;
+      }
+    }
+  }
+  .pink__section {
+    flex-direction: row;
+    justify-content: space-between;
+    .pink__image {
+      width: 50%;
+      order: 1;
+      img {
+        width: 100%;
+      }
+    }
+    .pink__text {
+      text-align: left;
+      order: 2;
+      width: 40%;
+      padding-left: 0px;
+      .pink__title {
+        padding: 10px 0 20px 0;
+      }
+      .pink__copy {
+        text-align: left;
+      }
+      .pink__button {
+        font-size: 16px;
+        text-align: left;
+      }
+    }
+  }
+  .service__section {
+    display: flex;
+    .gra {
+      width: 50%;
+    }
+    .ph {
+      width: 50%;
+    }
+  }
+  .testimonials__section {
+    margin-top: 80px;
+    .testimonials__title {
+      padding-top: 80px;
+    }
+    .info__testimonials {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      .info {
+        padding: 10px;
+        p {
+          font-size: 0.7em;
+        }
+        .info__name {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+  .collage__section {
+    flex-wrap: nowrap;
+    img {
+      width: 25%;
+    }
+  }
+}
