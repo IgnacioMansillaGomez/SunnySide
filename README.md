@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](\Screenshots\Sunnyside-Agency-Landing-Page-Desk.png)
-![](\Screenshots\Sunnyside-Agency-Landing-Page-Mobile.png)
+![](.\Screenshots\Sunnyside-Agency-Landing-Page-Desk.png)
+![](.\Screenshots\Sunnyside-Agency-Landing-Page-Mobile.png)
 
 ### Links
 
